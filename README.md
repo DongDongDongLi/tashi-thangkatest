@@ -18,18 +18,46 @@ npm run build
 npm start
 ```
 
-### Deploy to Vercel (Recommended)
+### Deploy to Vercel (Recommended) — for PayPal store URL
 
-1. Push this folder to GitHub
-2. Import project at [vercel.com](https://vercel.com)
-3. Set environment variables:
-   ```
-   NEXT_PUBLIC_SITE_URL=https://yourdomain.com
-   PAYPAL_MODE=live
-   NEXT_PUBLIC_PAYPAL_CLIENT_ID=...
-   PAYPAL_CLIENT_SECRET=...
-   ```
-4. Connect your domain (e.g. `tashithangka.com`)
+You need a **public https link** for PayPal. Fastest path:
+
+#### A. GitHub + Vercel (browser, ~15 min)
+
+1. Create a new empty repo on [github.com/new](https://github.com/new)  
+   - Name e.g. `tashi-thangka`  
+   - Do **not** add README (repo already has files)
+2. In this project folder, run (replace `YOUR_USER` and repo name):
+
+```bash
+git remote add origin https://github.com/YOUR_USER/tashi-thangka.git
+git branch -M main
+git push -u origin main
+```
+
+3. Open [vercel.com/new](https://vercel.com/new) → Import that GitHub repo  
+4. Framework: **Next.js** (auto-detected) → Deploy  
+5. After success, copy the URL like `https://tashi-thangka-xxx.vercel.app`  
+6. Paste that URL into PayPal as your store link  
+
+Optional env vars in Vercel → Settings → Environment Variables (can add later for PayPal):
+
+```
+NEXT_PUBLIC_SITE_URL=https://your-deployment.vercel.app
+PAYPAL_MODE=sandbox
+NEXT_PUBLIC_PAYPAL_CLIENT_ID=
+PAYPAL_CLIENT_SECRET=
+```
+
+#### B. Vercel CLI (if you prefer terminal)
+
+```bash
+npx vercel login
+npx vercel
+```
+
+Follow prompts, then use the Production URL for PayPal.
+
 
 ## PayPal Checkout
 
