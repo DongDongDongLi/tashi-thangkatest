@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf7f2;
+  --color-burgundy: #6b1d2a;
+  --color-burgundy-dark: #4a121c;
+  --color-gold: #c9a84c;
+  --color-gold-dark: #a8862e;
+  --color-charcoal: #2c2420;
+  --color-stone: #7a6f66;
+
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.prose-content p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: var(--color-stone);
+}
+
+.prose-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: var(--color-burgundy);
+}
+
+.prose-content ul {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+  color: var(--color-stone);
+}
+
+.prose-content li {
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+  background-color: var(--color-burgundy);
+  padding: 0.875rem 2rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-cream);
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-burgundy-dark);
+}
+
+.btn-primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+  border: 1px solid var(--color-burgundy);
+  padding: 0.875rem 2rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-burgundy);
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-burgundy);
+  color: var(--color-cream);
+}
+
+.section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  color: var(--color-burgundy);
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.75rem;
+  }
+}
+
+.decorative-line {
+  height: 1px;
+  width: 4rem;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
