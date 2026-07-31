@@ -28,9 +28,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
-.env
-.env*.local
+# tools
+.tools/
+
+# one-off scripts with secrets prompts (optional keep local)
+# push.ps1 is safe to commit; leave tracked if added
+
 
 # typescript
 *.tsbuildinfo
