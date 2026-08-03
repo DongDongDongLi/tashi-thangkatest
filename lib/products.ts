@@ -19,6 +19,28 @@ export type Product = {
 
 export const products: Product[] = [
   {
+    slug: "paypal-test-1-dollar",
+    name: "PayPal Test Item ($1)",
+    shortDescription:
+      "Temporary $1 test product for verifying Live PayPal checkout. Not a real Thangka — delete after testing.",
+    description:
+      "This is a one-dollar checkout test item used only to verify that PayPal Live payments work on this store. Do not treat it as a real artwork order. Remove this product from the catalog after your payment test succeeds.",
+    price: 1,
+    category: "Test",
+    deity: "N/A",
+    size: "N/A",
+    material: "Digital test item — no physical shipment",
+    origin: "Test only",
+    inStock: true,
+    featured: true,
+    image:
+      "https://images.unsplash.com/photo-1547981609-4c099a484c24?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1547981609-4c099a484c24?w=1200&q=80",
+    ],
+    tags: ["test", "paypal"],
+  },
+  {
     slug: "green-tara-thangka",
     name: "Green Tara Thangka",
     shortDescription:

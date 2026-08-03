@@ -8,6 +8,12 @@ type ProductTranslation = {
 };
 
 export const productTranslations: Record<string, ProductTranslation> = {
+  "paypal-test-1-dollar": {
+    name: "PayPal 测试商品（$1）",
+    shortDescription: "仅用于测试 Live 付款的 $1 临时商品，测完请删除。",
+    category: "测试",
+    soldOut: "已售罄",
+  },
   "green-tara-thangka": {
     name: "绿度母唐卡",
     shortDescription: "手绘绿度母——慈悲与迅捷救度的化身。",
