@@ -7,32 +7,57 @@ import {
 } from "@paypal/react-paypal-js";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type PayPalCheckoutProps = {
   slug: string;
   productName: string;
-  configured: boolean;
-  clientId: string;
 };
 
-export function PayPalCheckout({
-  slug,
-  productName,
-  configured,
-  clientId,
-}: PayPalCheckoutProps) {
+type PayPalConfig = {
+  clientId: string;
+  configured: boolean;
+  mode: string;
+};
+
+export function PayPalCheckout({ slug, productName }: PayPalCheckoutProps) {
   const router = useRouter();
+  const [config, setConfig] = useState<PayPalConfig | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [paying, setPaying] = useState(false);
 
-  if (!configured || !clientId) {
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/paypal/config")
+      .then((res) => res.json())
+      .then((data: PayPalConfig) => {
+        if (!cancelled) setConfig(data);
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setConfig({ clientId: "", configured: false, mode: "sandbox" });
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  if (!config) {
+    return (
+      <div className="w-full max-w-sm rounded-sm border border-gold/30 bg-white p-4 text-sm text-stone">
+        Loading PayPal…
+      </div>
+    );
+  }
+
+  if (!config.configured || !config.clientId) {
     return (
       <div className="w-full max-w-sm space-y-3 rounded-sm border border-gold/30 bg-white p-4">
         <p className="text-sm text-stone">
-          PayPal checkout is almost ready. Add your PayPal Client ID and Secret
-          to <code className="text-burgundy">.env.local</code>, then restart the
-          server.
+          PayPal is not configured on the server yet. After adding Client ID and
+          Secret in Vercel Environment Variables, Redeploy the project (without
+          build cache).
         </p>
         <Link href="/contact" className="btn-outline w-full">
           Inquire instead
@@ -42,7 +67,7 @@ export function PayPalCheckout({
   }
 
   const options: ReactPayPalScriptOptions = {
-    clientId,
+    clientId: config.clientId,
     currency: "USD",
     intent: "capture",
   };
@@ -51,6 +76,7 @@ export function PayPalCheckout({
     <div className="w-full max-w-sm space-y-3">
       <p className="text-xs uppercase tracking-widest text-gold-dark">
         Pay securely with PayPal
+        {config.mode === "live" ? "" : " (Sandbox)"}
       </p>
 
       <PayPalScriptProvider options={options}>
