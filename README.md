@@ -94,17 +94,33 @@ Restart `npm run dev`, open any in-stock product, and pay with a [Sandbox test b
 
 Flow: Product page → PayPal → `/checkout/success` or `/checkout/cancel`
 
+## Admin panel (商品管理)
+
+Integrated at **`/admin`** (same site).
+
+1. In Vercel → Environment Variables, add:
+   - `ADMIN_PASSWORD` = your admin password
+   - Optional: create **Storage → Blob**, then add `BLOB_READ_WRITE_TOKEN` (required to **save** products on Vercel)
+2. Redeploy
+3. Open: `https://your-site.vercel.app/admin/login`
+4. Features: list / create / edit / publish(toggle stock) / delete  
+   Images use URL links for now (no upload).
+
+Without Blob on Vercel, the storefront still reads seeded `data/products.json`, but saving from admin will show an error until Blob is configured.
+
 ## Project Structure
 
 ```
 app/                  # Pages (App Router)
+  admin/              # Admin login + product CRUD
   products/           # Collection + product detail
   policies/           # Shipping, returns, privacy
   sitemap.ts          # Auto sitemap for Google
   robots.ts           # Crawler rules
-components/           # Header, Footer, ProductCard
+components/           # Header, Footer, ProductCard, admin/*
+data/products.json    # Seed / local product catalog
 lib/
-  products.ts         # Product data — edit here
+  product-store.ts    # Load/save products (file + Vercel Blob)
   site.ts             # Brand info, contact, nav
   seo.ts              # JSON-LD structured data
 public/               # Static assets (replace logo, add real photos)
@@ -115,7 +131,7 @@ public/               # Static assets (replace logo, add real photos)
 | What | File |
 |------|------|
 | Brand name, email, address | `lib/site.ts` |
-| Products (name, price, images) | `lib/products.ts` |
+| Products (admin UI or JSON) | `/admin` or `data/products.json` |
 | Colors & fonts | `app/globals.css` |
 | Homepage content | `app/page.tsx` |
 
