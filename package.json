@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@paypal/react-paypal-js": "^10.2.0",
+    "@vercel/blob": "^2.6.1",
     "next": "^15.3.3",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",

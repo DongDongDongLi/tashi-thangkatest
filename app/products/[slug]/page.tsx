@@ -5,25 +5,19 @@ import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { JsonLd } from "@/components/JsonLd";
 import { PayPalCheckout } from "@/components/PayPalCheckout";
-import {
-  getProductBySlug,
-  products,
-  formatPrice,
-} from "@/lib/products";
+import { getProductBySlug, formatPrice } from "@/lib/products";
 import { breadcrumbJsonLd, productJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
+
+export const dynamic = "force-dynamic";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  return products.map((p) => ({ slug: p.slug }));
-}
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await getProductBySlug(slug);
   if (!product) return {};
 
   return {
@@ -35,15 +29,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: product.name,
       description: product.shortDescription,
-      images: [{ url: product.image }],
+      images: product.image ? [{ url: product.image }] : undefined,
     },
   };
 }
 
 export default async function ProductDetailPage({ params }: Props) {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await getProductBySlug(slug);
   if (!product) notFound();
+
+  const imageSrc =
+    product.image ||
+    "https://images.unsplash.com/photo-1547981609-4c099a484c24?w=800&q=80";
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
@@ -53,14 +51,12 @@ export default async function ProductDetailPage({ params }: Props) {
 
   return (
     <>
-      <JsonLd data={productJsonLd(product)} />
+      <JsonLd data={productJsonLd({ ...product, image: imageSrc, images: product.images?.length ? product.images : [imageSrc] })} />
       <JsonLd
         data={breadcrumbJsonLd(
           breadcrumbs.map((b) => ({
             name: b.label,
-            url:
-              b.href ??
-              `${siteConfig.url}/products/${product.slug}`,
+            url: b.href ?? `${siteConfig.url}/products/${product.slug}`,
           }))
         )}
       />
@@ -71,7 +67,7 @@ export default async function ProductDetailPage({ params }: Props) {
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-gold/20">
             <Image
-              src={product.image}
+              src={imageSrc}
               alt={`${product.name} — authentic Tibetan Thangka painting`}
               fill
               className="object-cover"

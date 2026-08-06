@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ProductCard } from "@/components/ProductCard";
 import { getDictionary, getLocale } from "@/lib/i18n";
-import { products } from "@/lib/products";
+import { getProducts } from "@/lib/products";
 import { siteConfig } from "@/lib/site";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Collection — Hand-Painted Tibetan Thangkas",
@@ -18,6 +20,7 @@ export default async function ProductsPage() {
   const locale = await getLocale();
   const dict = getDictionary(locale);
   const t = dict.products;
+  const products = await getProducts();
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">

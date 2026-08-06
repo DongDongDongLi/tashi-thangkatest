@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n/config";
 import { commonLabels, getProductLabels } from "@/lib/i18n/product-translations";
-import { Product, formatPrice } from "@/lib/products";
+import type { Product } from "@/lib/product-types";
+import { formatPrice } from "@/lib/product-types";
 
 type ProductCardProps = {
   product: Product;

@@ -8,7 +8,7 @@ export default async function HomePage() {
   const locale = await getLocale();
   const dict = getDictionary(locale);
   const t = dict.home;
-  const featured = getFeaturedProducts();
+  const featured = await getFeaturedProducts();
 
   const trustItems = [
     { title: t.trust1Title, desc: t.trust1Desc },

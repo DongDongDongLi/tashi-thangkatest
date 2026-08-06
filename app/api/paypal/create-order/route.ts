@@ -16,7 +16,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing product slug" }, { status: 400 });
     }
 
-    const product = getProductBySlug(body.slug);
+    const product = await getProductBySlug(body.slug);
     if (!product) {
       return NextResponse.json({ error: "Product not found" }, { status: 404 });
     }

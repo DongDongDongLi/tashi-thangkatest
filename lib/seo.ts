@@ -1,5 +1,6 @@
 import { siteConfig } from "./site";
-import { Product, formatPrice } from "./products";
+import type { Product } from "./product-types";
+import { formatPrice } from "./product-types";
 
 export function organizationJsonLd() {
   return {
