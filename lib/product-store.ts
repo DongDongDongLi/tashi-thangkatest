@@ -4,6 +4,7 @@ import { put, list } from "@vercel/blob";
 import { promises as fs } from "fs";
 import path from "path";
 import type { Product } from "@/lib/product-types";
+import { normalizeProduct } from "@/lib/product-types";
 import seed from "@/data/products.json";
 
 const BLOB_PATHNAME = "catalog/products.json";
@@ -26,7 +27,7 @@ export async function getProducts(): Promise<Product[]> {
         const res = await fetch(blob.url, { cache: "no-store" });
         if (res.ok) {
           const data = (await res.json()) as Product[];
-          if (Array.isArray(data)) return data;
+          if (Array.isArray(data)) return data.map(normalizeProduct);
         }
       }
     } catch (error) {
@@ -37,12 +38,12 @@ export async function getProducts(): Promise<Product[]> {
   try {
     const raw = await fs.readFile(LOCAL_FILE, "utf8");
     const data = JSON.parse(raw) as Product[];
-    if (Array.isArray(data)) return data;
+    if (Array.isArray(data)) return data.map(normalizeProduct);
   } catch {
     // ignore
   }
 
-  return seed as Product[];
+  return (seed as Product[]).map(normalizeProduct);
 }
 
 export async function getProductBySlug(
@@ -58,7 +59,8 @@ export async function getFeaturedProducts(): Promise<Product[]> {
 }
 
 export async function saveProducts(products: Product[]): Promise<void> {
-  const body = JSON.stringify(products, null, 2);
+  const normalized = products.map(normalizeProduct);
+  const body = JSON.stringify(normalized, null, 2);
 
   if (isBlobConfigured()) {
     await put(BLOB_PATHNAME, body, {

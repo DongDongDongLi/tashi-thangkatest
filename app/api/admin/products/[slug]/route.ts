@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/admin-auth";
+import { buildProductFromBody } from "@/lib/admin-product";
 import {
   deleteProduct,
   getProductBySlug,
@@ -38,44 +39,27 @@ export async function PUT(request: Request, context: Ctx) {
     }
 
     const body = (await request.json()) as Partial<Product>;
-    const price = Number(body.price ?? existing.price);
-    if (!Number.isFinite(price) || price < 0) {
+    const product = buildProductFromBody(body, existing);
+
+    if (!product.name) {
+      return NextResponse.json({ error: "商品名称必填" }, { status: 400 });
+    }
+    if (!Number.isFinite(product.price) || product.price < 0) {
       return NextResponse.json({ error: "价格无效" }, { status: 400 });
     }
-
-    const product: Product = {
-      ...existing,
-      ...body,
-      slug: existing.slug,
-      name: (body.name ?? existing.name).trim(),
-      shortDescription: (body.shortDescription ?? existing.shortDescription).trim(),
-      description: (body.description ?? existing.description).trim(),
-      price,
-      compareAtPrice:
-        body.compareAtPrice === undefined
-          ? existing.compareAtPrice
-          : body.compareAtPrice === null || body.compareAtPrice === ("" as unknown)
-            ? undefined
-            : Number(body.compareAtPrice),
-      category: (body.category ?? existing.category).trim(),
-      deity: (body.deity ?? existing.deity).trim(),
-      size: (body.size ?? existing.size).trim(),
-      material: (body.material ?? existing.material).trim(),
-      origin: (body.origin ?? existing.origin).trim(),
-      inStock: body.inStock ?? existing.inStock,
-      featured: body.featured ?? existing.featured,
-      image: (body.image ?? existing.image).trim(),
-      images: Array.isArray(body.images)
-        ? body.images.filter(Boolean)
-        : existing.images,
-      tags: Array.isArray(body.tags) ? body.tags.filter(Boolean) : existing.tags,
-    };
-
     if (
       product.compareAtPrice !== undefined &&
       !Number.isFinite(product.compareAtPrice)
     ) {
       return NextResponse.json({ error: "对比价无效" }, { status: 400 });
+    }
+    for (const v of product.variants || []) {
+      if (!Number.isFinite(v.price) || v.price < 0) {
+        return NextResponse.json(
+          { error: `款式「${v.name}」价格无效` },
+          { status: 400 }
+        );
+      }
     }
 
     const products = await upsertProduct(product);

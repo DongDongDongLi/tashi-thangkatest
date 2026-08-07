@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/admin-auth";
+import { buildProductFromBody } from "@/lib/admin-product";
 import {
   canPersistProducts,
   getProducts,
@@ -46,34 +47,21 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "价格无效" }, { status: 400 });
     }
 
-    const product: Product = {
-      slug,
-      name,
-      shortDescription: body.shortDescription?.trim() || "",
-      description: body.description?.trim() || "",
-      price,
-      compareAtPrice:
-        body.compareAtPrice === undefined || body.compareAtPrice === null
-          ? undefined
-          : Number(body.compareAtPrice),
-      category: body.category?.trim() || "Uncategorized",
-      deity: body.deity?.trim() || "",
-      size: body.size?.trim() || "",
-      material: body.material?.trim() || "",
-      origin: body.origin?.trim() || "",
-      inStock: body.inStock !== false,
-      featured: Boolean(body.featured),
-      image: body.image?.trim() || "",
-      images: Array.isArray(body.images)
-        ? body.images.filter(Boolean)
-        : body.image
-          ? [body.image]
-          : [],
-      tags: Array.isArray(body.tags) ? body.tags.filter(Boolean) : [],
-    };
-
-    if (product.compareAtPrice !== undefined && !Number.isFinite(product.compareAtPrice)) {
+    const product = buildProductFromBody({ ...body, slug, name, price });
+    if (
+      product.compareAtPrice !== undefined &&
+      !Number.isFinite(product.compareAtPrice)
+    ) {
       return NextResponse.json({ error: "对比价无效" }, { status: 400 });
+    }
+
+    for (const v of product.variants || []) {
+      if (!Number.isFinite(v.price) || v.price < 0) {
+        return NextResponse.json(
+          { error: `款式「${v.name}」价格无效` },
+          { status: 400 }
+        );
+      }
     }
 
     const products = await upsertProduct(product);

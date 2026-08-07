@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createPayPalOrder, isPayPalConfigured } from "@/lib/paypal";
 import { getProductBySlug } from "@/lib/products";
+import { resolvePurchaseOption } from "@/lib/product-types";
 
 export async function POST(request: Request) {
   try {
@@ -11,7 +12,10 @@ export async function POST(request: Request) {
       );
     }
 
-    const body = (await request.json()) as { slug?: string };
+    const body = (await request.json()) as {
+      slug?: string;
+      variantId?: string;
+    };
     if (!body.slug) {
       return NextResponse.json({ error: "Missing product slug" }, { status: 400 });
     }
@@ -20,18 +24,23 @@ export async function POST(request: Request) {
     if (!product) {
       return NextResponse.json({ error: "Product not found" }, { status: 404 });
     }
-    if (!product.inStock) {
+
+    const purchase = resolvePurchaseOption(product, body.variantId);
+    if (!purchase.inStock) {
       return NextResponse.json({ error: "Product is sold out" }, { status: 400 });
     }
 
-    // Always use server-side price — never trust client amounts
     const order = await createPayPalOrder({
       slug: product.slug,
-      name: product.name,
-      price: product.price,
+      name: purchase.label,
+      price: purchase.price,
     });
 
-    return NextResponse.json({ id: order.id });
+    return NextResponse.json({
+      id: order.id,
+      variantId: purchase.variantId,
+      price: purchase.price,
+    });
   } catch (error) {
     console.error("PayPal create-order error:", error);
     return NextResponse.json(

@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 type PayPalCheckoutProps = {
   slug: string;
   productName: string;
+  variantId?: string;
 };
 
 type PayPalConfig = {
@@ -20,7 +21,11 @@ type PayPalConfig = {
   mode: string;
 };
 
-export function PayPalCheckout({ slug, productName }: PayPalCheckoutProps) {
+export function PayPalCheckout({
+  slug,
+  productName,
+  variantId,
+}: PayPalCheckoutProps) {
   const router = useRouter();
   const [config, setConfig] = useState<PayPalConfig | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -56,8 +61,7 @@ export function PayPalCheckout({ slug, productName }: PayPalCheckoutProps) {
       <div className="w-full max-w-sm space-y-3 rounded-sm border border-gold/30 bg-white p-4">
         <p className="text-sm text-stone">
           PayPal is not configured on the server yet. After adding Client ID and
-          Secret in Vercel Environment Variables, Redeploy the project (without
-          build cache).
+          Secret in Vercel Environment Variables, Redeploy the project.
         </p>
         <Link href="/contact" className="btn-outline w-full">
           Inquire instead
@@ -88,6 +92,7 @@ export function PayPalCheckout({ slug, productName }: PayPalCheckoutProps) {
             label: "paypal",
           }}
           disabled={paying}
+          forceReRender={[slug, variantId || "", productName]}
           createOrder={async () => {
             setError(null);
             setPaying(true);
@@ -95,7 +100,7 @@ export function PayPalCheckout({ slug, productName }: PayPalCheckoutProps) {
               const response = await fetch("/api/paypal/create-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ slug }),
+                body: JSON.stringify({ slug, variantId }),
               });
               const data = (await response.json()) as {
                 id?: string;

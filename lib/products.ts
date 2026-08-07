@@ -1,5 +1,13 @@
-export type { Product } from "@/lib/product-types";
-export { formatPrice } from "@/lib/product-types";
+export type { Product, ProductVariant } from "@/lib/product-types";
+export {
+  formatPrice,
+  getProductImages,
+  getProductVariants,
+  hasVariants,
+  resolvePurchaseOption,
+  createVariantId,
+  normalizeProduct,
+} from "@/lib/product-types";
 
 export {
   getProducts,
