@@ -18,23 +18,41 @@ export function canPersistProducts() {
   return !process.env.VERCEL || isBlobConfigured();
 }
 
-export async function getProducts(): Promise<Product[]> {
-  if (isBlobConfigured()) {
-    try {
-      const { blobs } = await list({ prefix: "catalog/", limit: 20 });
-      const blob = blobs.find((b) => b.pathname === BLOB_PATHNAME);
-      if (blob?.url) {
-        const res = await fetch(blob.url, { cache: "no-store" });
-        if (res.ok) {
-          const data = (await res.json()) as Product[];
-          if (Array.isArray(data)) return data.map(normalizeProduct);
-        }
+async function readProductsFromBlob(): Promise<Product[] | null> {
+  if (!isBlobConfigured()) return null;
+
+  try {
+    const { blobs } = await list({ prefix: "catalog/", limit: 100 });
+    const candidates = blobs
+      .filter(
+        (b) =>
+          b.pathname === BLOB_PATHNAME ||
+          b.pathname.endsWith("/products.json") ||
+          b.pathname.endsWith("products.json")
+      )
+      .sort((a, b) => {
+        const at = a.uploadedAt ? new Date(a.uploadedAt).getTime() : 0;
+        const bt = b.uploadedAt ? new Date(b.uploadedAt).getTime() : 0;
+        return bt - at;
+      });
+
+    for (const blob of candidates) {
+      if (!blob.url) continue;
+      const res = await fetch(blob.url, { cache: "no-store" });
+      if (!res.ok) continue;
+      const data = (await res.json()) as Product[];
+      if (Array.isArray(data)) {
+        return data.map(normalizeProduct);
       }
-    } catch (error) {
-      console.error("Blob product read failed, falling back:", error);
     }
+  } catch (error) {
+    console.error("Blob product read failed:", error);
   }
 
+  return null;
+}
+
+async function readProductsFromLocal(): Promise<Product[] | null> {
   try {
     const raw = await fs.readFile(LOCAL_FILE, "utf8");
     const data = JSON.parse(raw) as Product[];
@@ -42,6 +60,15 @@ export async function getProducts(): Promise<Product[]> {
   } catch {
     // ignore
   }
+  return null;
+}
+
+export async function getProducts(): Promise<Product[]> {
+  const fromBlob = await readProductsFromBlob();
+  if (fromBlob) return fromBlob;
+
+  const fromLocal = await readProductsFromLocal();
+  if (fromLocal) return fromLocal;
 
   return (seed as Product[]).map(normalizeProduct);
 }
@@ -49,8 +76,23 @@ export async function getProducts(): Promise<Product[]> {
 export async function getProductBySlug(
   slug: string
 ): Promise<Product | undefined> {
+  const decoded = safeDecode(slug);
   const products = await getProducts();
-  return products.find((p) => p.slug === slug);
+  return products.find(
+    (p) =>
+      p.slug === slug ||
+      p.slug === decoded ||
+      encodeURIComponent(p.slug) === slug ||
+      p.slug === decodeURIComponent(slug)
+  );
+}
+
+function safeDecode(value: string) {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
 }
 
 export async function getFeaturedProducts(): Promise<Product[]> {
@@ -63,6 +105,7 @@ export async function saveProducts(products: Product[]): Promise<void> {
   const body = JSON.stringify(normalized, null, 2);
 
   if (isBlobConfigured()) {
+    // Overwrite fixed catalog file used by the storefront
     await put(BLOB_PATHNAME, body, {
       access: "public",
       addRandomSuffix: false,
@@ -102,13 +145,13 @@ export async function deleteProduct(slug: string): Promise<Product[]> {
   return next;
 }
 
+/** Prefer ASCII slugs so product URLs never 404 due to encoding issues */
 export function slugify(input: string): string {
-  return (
-    input
-      .toLowerCase()
-      .trim()
-      .replace(/[^a-z0-9\u4e00-\u9fff]+/g, "-")
-      .replace(/^-+|-+$/g, "")
-      .slice(0, 80) || `product-${Date.now()}`
-  );
+  const ascii = input
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+  return ascii || `product-${Date.now()}`;
 }

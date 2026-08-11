@@ -15,7 +15,8 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug: rawSlug } = await params;
+  const slug = decodeURIComponent(rawSlug);
   const product = await getProductBySlug(slug);
   if (!product) return {};
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: product.name,
     description: product.shortDescription,
     alternates: {
-      canonical: `${siteConfig.url}/products/${product.slug}`,
+      canonical: `${siteConfig.url}/products/${encodeURIComponent(product.slug)}`,
     },
     openGraph: {
       title: product.name,
@@ -36,7 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProductDetailPage({ params }: Props) {
-  const { slug } = await params;
+  const { slug: rawSlug } = await params;
+  const slug = decodeURIComponent(rawSlug);
   const product = await getProductBySlug(slug);
   if (!product) notFound();
 

@@ -134,7 +134,7 @@ export function AdminProductList() {
                   <td className="px-4 py-3">
                     <div className="flex flex-wrap gap-2">
                       <Link
-                        href={`/admin/products/${product.slug}`}
+                        href={`/admin/products/${encodeURIComponent(product.slug)}`}
                         className="text-burgundy underline"
                       >
                         编辑
@@ -147,7 +147,7 @@ export function AdminProductList() {
                         {product.inStock ? "下架" : "上架"}
                       </button>
                       <Link
-                        href={`/products/${product.slug}`}
+                        href={`/products/${encodeURIComponent(product.slug)}`}
                         className="text-stone underline"
                         target="_blank"
                       >

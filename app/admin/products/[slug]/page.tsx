@@ -20,7 +20,8 @@ export default async function AdminEditProductPage({ params }: Props) {
     redirect("/admin/login");
   }
 
-  const { slug } = await params;
+  const { slug: rawSlug } = await params;
+  const slug = decodeURIComponent(rawSlug);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">

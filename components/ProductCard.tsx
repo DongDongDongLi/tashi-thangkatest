@@ -16,17 +16,32 @@ export function ProductCard({ product, locale = "en" }: ProductCardProps) {
   const shortDescription = zh?.shortDescription ?? product.shortDescription;
   const category = zh?.category ?? product.category;
   const soldOutLabel = commonLabels[locale].soldOut;
+  const href = `/products/${encodeURIComponent(product.slug)}`;
+  const imageSrc =
+    product.image ||
+    product.images?.[0] ||
+    "https://images.unsplash.com/photo-1547981609-4c099a484c24?w=800&q=80";
+  const isBlobImage = imageSrc.includes("blob.vercel-storage.com");
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-sm border border-gold/20 bg-white shadow-sm transition-shadow hover:shadow-lg">
-      <Link href={`/products/${product.slug}`} className="relative aspect-[4/5] overflow-hidden">
-        <Image
-          src={product.image}
-          alt={`${name} — hand-painted Tibetan Thangka`}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
+      <Link href={href} className="relative aspect-[4/5] overflow-hidden">
+        {isBlobImage ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={imageSrc}
+            alt={`${name} — hand-painted Tibetan Thangka`}
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <Image
+            src={imageSrc}
+            alt={`${name} — hand-painted Tibetan Thangka`}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        )}
         {!product.inStock && (
           <span className="absolute left-3 top-3 rounded-sm bg-charcoal/80 px-2 py-1 text-xs uppercase tracking-wider text-cream">
             {soldOutLabel}
@@ -38,7 +53,7 @@ export function ProductCard({ product, locale = "en" }: ProductCardProps) {
         <p className="text-xs uppercase tracking-widest text-gold-dark">
           {category}
         </p>
-        <Link href={`/products/${product.slug}`}>
+        <Link href={href}>
           <h3 className="mt-1 font-serif text-xl text-burgundy transition-colors group-hover:text-gold-dark">
             {name}
           </h3>
