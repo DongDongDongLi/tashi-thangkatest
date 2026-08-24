@@ -30,7 +30,7 @@ export default function AboutPage() {
       <div className="mt-16 grid items-center gap-12 lg:grid-cols-2">
         <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
           <Image
-            src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=800&q=80"
+            src="/images/about-1.jpg"
             alt="Himalayan art tradition"
             fill
             className="object-cover"
@@ -78,7 +78,7 @@ export default function AboutPage() {
         </div>
         <div className="relative aspect-[4/3] overflow-hidden rounded-sm lg:order-2">
           <Image
-            src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&q=80"
+            src="/images/about-2.jpg"
             alt="Thangka painting detail"
             fill
             className="object-cover"

@@ -97,11 +97,6 @@ export default function ContactPage() {
             </a>
           </div>
           <div>
-            <h2 className="font-serif text-xl text-burgundy">Phone</h2>
-            <p className="mt-2 text-stone">{siteConfig.phone}</p>
-            <p className="text-sm text-stone">Mon–Fri, 9am–6pm PST</p>
-          </div>
-          <div>
             <h2 className="font-serif text-xl text-burgundy">Studio</h2>
             <address className="mt-2 not-italic leading-relaxed text-stone">
               {siteConfig.address.street}

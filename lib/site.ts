@@ -5,8 +5,8 @@ export const siteConfig = {
     "Discover museum-quality, hand-painted Tibetan Thangka scrolls. Authentic Buddhist sacred art, ethically sourced from master artists in Tibet and Nepal. Ships worldwide from the USA.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://tashithangka.com",
   locale: "en_US",
-  email: "hello@tashithangka.com",
-  phone: "+1 (888) 555-0142",
+  email: "lining1986330@gmail.com",
+  phone: "",
   address: {
     street: "1288 Art District Blvd",
     city: "Los Angeles",

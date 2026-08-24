@@ -11,7 +11,7 @@ export function organizationJsonLd() {
     logo: `${siteConfig.url}/logo.svg`,
     description: siteConfig.description,
     email: siteConfig.email,
-    telephone: siteConfig.phone,
+    ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.street,
