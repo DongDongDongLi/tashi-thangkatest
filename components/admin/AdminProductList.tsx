@@ -80,6 +80,9 @@ export function AdminProductList() {
           <p className="mt-1 text-sm text-stone">上架、编辑、下架与删除</p>
         </div>
         <div className="flex gap-2">
+          <Link href="/admin/orders" className="btn-outline">
+            订单管理
+          </Link>
           <Link href="/admin/products/new" className="btn-primary">
             新增商品
           </Link>

@@ -5,14 +5,16 @@ import {
   PayPalScriptProvider,
   type ReactPayPalScriptOptions,
 } from "@paypal/react-paypal-js";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import type { ShippingAddress } from "@/lib/order-types";
 
 type PayPalCheckoutProps = {
   slug: string;
   productName: string;
   variantId?: string;
+  shipping: ShippingAddress;
+  disabled?: boolean;
 };
 
 type PayPalConfig = {
@@ -25,11 +27,14 @@ export function PayPalCheckout({
   slug,
   productName,
   variantId,
+  shipping,
+  disabled,
 }: PayPalCheckoutProps) {
   const router = useRouter();
   const [config, setConfig] = useState<PayPalConfig | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [paying, setPaying] = useState(false);
+  const [internalOrderId, setInternalOrderId] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -50,7 +55,7 @@ export function PayPalCheckout({
 
   if (!config) {
     return (
-      <div className="w-full max-w-sm rounded-sm border border-gold/30 bg-white p-4 text-sm text-stone">
+      <div className="rounded-sm border border-gold/30 bg-white p-4 text-sm text-stone">
         Loading PayPal…
       </div>
     );
@@ -58,14 +63,8 @@ export function PayPalCheckout({
 
   if (!config.configured || !config.clientId) {
     return (
-      <div className="w-full max-w-sm space-y-3 rounded-sm border border-gold/30 bg-white p-4">
-        <p className="text-sm text-stone">
-          PayPal is not configured on the server yet. After adding Client ID and
-          Secret in Vercel Environment Variables, Redeploy the project.
-        </p>
-        <Link href="/contact" className="btn-outline w-full">
-          Inquire instead
-        </Link>
+      <div className="rounded-sm border border-gold/30 bg-white p-4 text-sm text-stone">
+        PayPal is not configured yet.
       </div>
     );
   }
@@ -76,8 +75,10 @@ export function PayPalCheckout({
     intent: "capture",
   };
 
+  const shippingKey = JSON.stringify(shipping);
+
   return (
-    <div className="w-full max-w-sm space-y-3">
+    <div className="space-y-3">
       <p className="text-xs uppercase tracking-widest text-gold-dark">
         Pay securely with PayPal
         {config.mode === "live" ? "" : " (Sandbox)"}
@@ -91,8 +92,8 @@ export function PayPalCheckout({
             shape: "rect",
             label: "paypal",
           }}
-          disabled={paying}
-          forceReRender={[slug, variantId || "", productName]}
+          disabled={disabled || paying}
+          forceReRender={[slug, variantId || "", productName, shippingKey]}
           createOrder={async () => {
             setError(null);
             setPaying(true);
@@ -100,14 +101,18 @@ export function PayPalCheckout({
               const response = await fetch("/api/paypal/create-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ slug, variantId }),
+                body: JSON.stringify({ slug, variantId, shipping }),
               });
               const data = (await response.json()) as {
                 id?: string;
+                internalOrderId?: string;
                 error?: string;
               };
               if (!response.ok || !data.id) {
                 throw new Error(data.error || "Could not create order");
+              }
+              if (data.internalOrderId) {
+                setInternalOrderId(data.internalOrderId);
               }
               return data.id;
             } catch (err) {
@@ -123,22 +128,25 @@ export function PayPalCheckout({
               const response = await fetch("/api/paypal/capture-order", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ orderID: data.orderID }),
+                body: JSON.stringify({
+                  orderID: data.orderID,
+                  internalOrderId,
+                }),
               });
               const result = (await response.json()) as {
-                status?: string;
-                captureId?: string;
+                internalOrderId?: string;
+                orderNumber?: string;
                 error?: string;
               };
               if (!response.ok) {
                 throw new Error(result.error || "Payment capture failed");
               }
-              const params = new URLSearchParams({
-                order: data.orderID,
-                product: productName,
-              });
-              if (result.captureId) params.set("capture", result.captureId);
-              router.push(`/checkout/success?${params.toString()}`);
+              const orderId = result.internalOrderId || internalOrderId;
+              if (orderId) {
+                router.push(`/account/orders/${orderId}`);
+              } else {
+                router.push("/account/orders");
+              }
             } catch (err) {
               const message =
                 err instanceof Error ? err.message : "Payment failed";
@@ -162,11 +170,6 @@ export function PayPalCheckout({
           {error}
         </p>
       )}
-
-      <p className="text-xs leading-relaxed text-stone">
-        You will complete payment on PayPal. Free insured US shipping is included
-        in the listed price.
-      </p>
     </div>
   );
 }

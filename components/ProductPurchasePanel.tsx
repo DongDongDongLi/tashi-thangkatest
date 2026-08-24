@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { PayPalCheckout } from "@/components/PayPalCheckout";
 import type { Product } from "@/lib/product-types";
 import {
   formatPrice,
@@ -134,11 +133,12 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
 
         <div className="mt-8 space-y-4">
           {purchase.inStock ? (
-            <PayPalCheckout
-              slug={product.slug}
-              productName={purchase.label}
-              variantId={purchase.variantId}
-            />
+            <Link
+              href={`/checkout?slug=${encodeURIComponent(product.slug)}${purchase.variantId ? `&variantId=${encodeURIComponent(purchase.variantId)}` : ""}`}
+              className="btn-primary inline-flex w-full max-w-sm justify-center"
+            >
+              Buy now — checkout
+            </Link>
           ) : (
             <button disabled className="btn-primary">
               Sold Out

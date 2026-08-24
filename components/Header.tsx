@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { AccountMenu } from "@/components/account/AccountMenu";
 import type { Dictionary } from "@/lib/i18n/dictionaries/en";
 import type { Locale } from "@/lib/i18n/config";
 import { siteConfig } from "@/lib/site";
@@ -42,6 +43,7 @@ export function Header({ locale, dict }: HeaderProps) {
         </nav>
 
         <div className="flex shrink-0 items-center gap-3">
+          <AccountMenu />
           <LanguageSwitcher locale={locale} />
           <Link
             href="/products"
