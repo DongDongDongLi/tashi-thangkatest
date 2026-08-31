@@ -123,12 +123,14 @@ async function readProductsFromLocal(): Promise<Product[] | null> {
 }
 
 /**
- * Storefront read: Blob → local file → seed.
- * Mutations must use loadCatalogForWrite() instead.
+ * Prefer git-tracked data/products.json (code catalog).
+ * Set USE_BLOB_CATALOG=true only if you still want Blob to override.
  */
 export async function getProducts(): Promise<Product[]> {
-  const fromBlob = await readProductsFromBlob();
-  if (fromBlob) return fromBlob;
+  if (process.env.USE_BLOB_CATALOG === "true") {
+    const fromBlob = await readProductsFromBlob();
+    if (fromBlob) return fromBlob;
+  }
 
   const fromLocal = await readProductsFromLocal();
   if (fromLocal) return fromLocal;

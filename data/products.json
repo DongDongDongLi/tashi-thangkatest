@@ -1,5 +1,95 @@
 [
   {
+    "slug": "doumu-thangka-pendant",
+    "name": "Hand-painted Tibetan Thangka Pendant",
+    "shortDescription": "Hand-painted Goddess Doumu (Health, Fortune) tsatsa thangka pendant.",
+    "description": "Authentic hand-painted tsatsa thangka pendant featuring Doumu Yuanjun. Each piece is individually painted by a master artist. Pendant size: 5.7cm × 4.7cm. Choose from brass painting box, spirit bell, or square leather-covered styles.",
+    "price": 68,
+    "category": "Pendant",
+    "deity": "Doumu Yuanjun",
+    "size": "5.7cm × 4.7cm",
+    "material": "Hand-painted tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/doumu-thangka-pendant/main.jpg",
+    "images": [
+      "/products/doumu-thangka-pendant/main.jpg"
+    ],
+    "tags": [
+      "doumu",
+      "doumu yuanjun",
+      "pendant",
+      "thangka",
+      "tsatsa"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Brass Painting Box — Black Background with Gold Characters",
+        "price": 68,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Brass Painting Box — Red Background with Gold Characters",
+        "price": 68,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Brass Painting Box — Goddess Doumu",
+        "price": 68,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Brass Spirit Bell — Black Background with Golden Characters",
+        "price": 68,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Brass Lingbao — Red Background with Golden Characters",
+        "price": 68,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Huangtong Lingbao — Doumu Yuanshen",
+        "price": 68,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Square Leather-covered Thangka — Brown with Golden Characters on Black Background",
+        "price": 150,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Square Leather-covered Thangka — Brown with Red Background and Golden Characters",
+        "price": 150,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Square Brown-Shell Thangka — Doumu Yuanjun",
+        "price": 150,
+        "inStock": true,
+        "image": "/products/doumu-thangka-pendant/variant-9.jpg"
+      }
+    ]
+  },
+  {
     "slug": "paypal-test-1-dollar",
     "name": "PayPal Test Item ($1)",
     "shortDescription": "Temporary $1 test product for verifying Live PayPal checkout. Not a real Thangka — delete after testing.",

@@ -1,0 +1,70 @@
+{
+  "_说明": "这是样例文件，不会自动上线。复制下面 product 对象到 data/products.json 数组里即可。",
+  "_图片目录": "public/products/huang-caishen-pendant/",
+  "_访问路径": "JSON 里写 /products/huang-caishen-pendant/xxx.jpg",
+
+  "product": {
+    "slug": "huang-caishen-pendant",
+    "name": "Hand-Painted Tsatsa Yellow Jambhala Pendant",
+    "shortDescription": "Hand-painted Yellow Jambhala (Wealth Deity) tsatsa thangka pendant, 2.95cm × 2.95cm. Three cord options available.",
+    "description": "Authentic hand-painted tsatsa thangka pendant featuring Yellow Jambhala (Jambhala / 黄财神). Each piece is individually painted by a master artist. Pendant size: 2.95cm × 2.95cm. Choose pendant only, or with hand-braided necklace cord in two styles.",
+    "price": 89,
+    "category": "Pendant",
+    "deity": "Yellow Jambhala",
+    "size": "2.95cm × 2.95cm",
+    "material": "Hand-painted tsatsa thangka; optional hand-braided necklace cord",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+
+    "image": "/products/huang-caishen-pendant/main.jpg",
+    "images": [
+      "/products/huang-caishen-pendant/main.jpg",
+      "/products/huang-caishen-pendant/detail-1.jpg",
+      "/products/huang-caishen-pendant/detail-2.jpg"
+    ],
+    "tags": ["jambhala", "yellow jambhala", "pendant", "tsatsa", "thangka"],
+
+    "variants": [
+      {
+        "id": "pendant-only",
+        "name": "Pendant Only — $89",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/huang-caishen-pendant/variant-pendant-only.jpg"
+      },
+      {
+        "id": "lion-cord",
+        "name": "Hand-Braided Lion Cord Necklace — $129",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/huang-caishen-pendant/variant-lion-cord-129.jpg"
+      },
+      {
+        "id": "shell-cord",
+        "name": "Hand-Braided White Shell Double-Layer Cord — $139",
+        "price": 139,
+        "inStock": true,
+        "image": "/products/huang-caishen-pendant/variant-shell-cord-139.jpg"
+      }
+    ]
+  },
+
+  "_字段对照": {
+    "slug": "英文网址 ID，唯一，如 huang-caishen-pendant",
+    "name": "商品标题（前台显示）",
+    "shortDescription": "列表页一句话简介",
+    "description": "详情页完整描述",
+    "price": "无规格时的默认价；有 variants 时建议填最低价",
+    "image": "主图（列表卡片用）→ 对应 主图.jpg",
+    "images": "详情页轮播图 → 主图 + 副1 + 副2",
+    "variants": "三个规格 → 对应外层三张规格图，name 写规格名，price 写价格，image 写规格图"
+  },
+
+  "_文件夹规则": {
+    "每个商品一个文件夹": "public/products/商品slug/",
+    "主图副图": "main.jpg, detail-1.jpg, detail-2.jpg",
+    "规格图": "variant-xxx.jpg（文件名建议英文，避免中文 URL）",
+    "原始素材": "可保留在根目录 1/ 等文件夹作备份，上线用 public/ 里的副本"
+  }
+}
