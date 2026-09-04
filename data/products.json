@@ -2223,6 +2223,1809 @@
     ]
   },
   {
+    "slug": "eight-guardians-wipe-thangka-pendant",
+    "name": "Hand-painted Wipe-clean Eight Birth-Guardian Thangka Pendant",
+    "shortDescription": "Hand-painted wipe-clean Thangka pendant featuring Eight Birth-Guardian deities in Tibetan ethnic style.",
+    "description": "Authentic hand-painted wipe-clean tsatsa thangka pendant. Each piece is hand-painted one by one by master craftsmen using mineral pigments. Size: 3.06cm × 1.9cm × 0.92cm.",
+    "price": 89,
+    "category": "Pendant",
+    "deity": "Eight Birth Guardians",
+    "size": "3.06cm × 1.9cm × 0.92cm",
+    "material": "Hand-painted tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/eight-guardians-wipe-thangka-pendant/main.jpg",
+    "images": [
+      "/products/eight-guardians-wipe-thangka-pendant/main.jpg",
+      "/products/eight-guardians-wipe-thangka-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "eight guardians",
+      "wipe-clean",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Vidyaraja",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Vairocana",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Mahasthamaprapta Bodhisattva",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Black Jambhala",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Fox Spirit",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Six-Armed Mahakala",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Green Tara",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Four-Armed Avalokitesvara",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Manjushri Bodhisattva",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Zakiram",
+        "price": 89,
+        "inStock": true,
+        "image": "/products/eight-guardians-wipe-thangka-pendant/variant-12.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "brass-3d-tsatsa-pendant",
+    "name": "Brass 3D Tsatsa Thangka Pendant",
+    "shortDescription": "Brass 3D tsatsa Thangka pendants including Green Tara, Samantabhadra, Manjushri, Tashilhamo, and more.",
+    "description": "Authentic brass 3D tsatsa thangka pendant in ethnic style. Each piece is crafted and painted by master artisans. Size: 4.5cm × 1.6cm × 1.6cm.",
+    "price": 129,
+    "category": "Pendant",
+    "deity": "Multiple Deities",
+    "size": "4.5cm × 1.6cm × 1.6cm",
+    "material": "Brass 3D tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/brass-3d-tsatsa-pendant/main.jpg",
+    "images": [
+      "/products/brass-3d-tsatsa-pendant/main.jpg",
+      "/products/brass-3d-tsatsa-pendant/detail-1.jpg",
+      "/products/brass-3d-tsatsa-pendant/detail-2.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "brass",
+      "3d",
+      "tsatsa",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Bl",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Acala Vidyaraja Open-Face Version (B)",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Vairocana",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Mahasthamaprapta Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Black Wealth-God (B)",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Fox Spirit Face-Opening Version (B)",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Yellow Jambhala (D)",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Six-Armed Mahakala (B)",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Green Tara (B)",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Four-Armed Avalokitesvara",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Manjushri Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-13.jpg"
+      },
+      {
+        "id": "variant-14",
+        "name": "Akshagarbha",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-14.jpg"
+      },
+      {
+        "id": "variant-15",
+        "name": "Medicine Buddha (B)",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-15.jpg"
+      },
+      {
+        "id": "variant-16",
+        "name": "Zakiram",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/brass-3d-tsatsa-pendant/variant-16.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "baby-buddha-relief-thangka-pendant",
+    "name": "Hand-painted Baby Buddha Relief Thangka Pendant",
+    "shortDescription": "Cute baby-Buddha style hand-painted relief Thangka necklace pendants for wealth, protection, and blessings.",
+    "description": "Authentic hand-painted relief tsatsa thangka pendant in baby-Buddha style. Each piece is hand-painted one by one by master craftsmen using mineral pigments. Size: 4.22cm × 2.37cm × 0.92cm.",
+    "price": 99,
+    "category": "Necklace Pendant",
+    "deity": "Multiple Deities",
+    "size": "4.22cm × 2.37cm × 0.92cm",
+    "material": "Hand-painted relief tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/baby-buddha-relief-thangka-pendant/main.jpg",
+    "images": [
+      "/products/baby-buddha-relief-thangka-pendant/main.jpg",
+      "/products/baby-buddha-relief-thangka-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "baby buddha",
+      "relief",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Vairocana Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Baby Buddha of Mahasthamaprapta Bodhisattva",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Ksitigarbha Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Angry Little Black Sky",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "God of Blessing and Wealth",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Guan Gong",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Guanyin Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "God of Wealth Jinbao",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Manxi God of Wealth",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Samantabhadra Bodhisattva Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Thousand-Hand Guanyin Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-13.jpg"
+      },
+      {
+        "id": "variant-14",
+        "name": "God of Auspicious Longevity and Wealth",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-14.jpg"
+      },
+      {
+        "id": "variant-15",
+        "name": "Manjushri Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-15.jpg"
+      },
+      {
+        "id": "variant-16",
+        "name": "Little Fox Spirit",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-16.jpg"
+      },
+      {
+        "id": "variant-17",
+        "name": "Akshobhya Baby Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-17.jpg"
+      },
+      {
+        "id": "variant-18",
+        "name": "Treasure God of Wealth",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/baby-buddha-relief-thangka-pendant/variant-18.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "enamel-cute-buddha-thangka-pendant",
+    "name": "Enamel Cute-Buddha Style Thangka Pendant",
+    "shortDescription": "Enamel / hand-painted cute-Buddha Thangka pendants featuring Yellow Jambhala, Manjushri, Samantabhadra, Mahakala, and more.",
+    "description": "Authentic enamel-style hand-painted tsatsa thangka pendant in cute-Buddha series. Size: 5.7cm × 4.7cm.",
+    "price": 129,
+    "category": "Pendant",
+    "deity": "Multiple Deities",
+    "size": "5.7cm × 4.7cm",
+    "material": "Enamel / hand-painted tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/enamel-cute-buddha-thangka-pendant/main.jpg",
+    "images": [
+      "/products/enamel-cute-buddha-thangka-pendant/main.jpg",
+      "/products/enamel-cute-buddha-thangka-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "enamel",
+      "cute buddha",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Cute Buddha Series — Ksitigarbha",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/enamel-cute-buddha-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Cute Buddha-Style — Yellow Jambhala",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/enamel-cute-buddha-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Cute Buddha-Style — Mahakala",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/enamel-cute-buddha-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Cute Buddha-Style — Samantabhadra Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/enamel-cute-buddha-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Cute Buddha Style — Thousand-Hand Guanyin",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/enamel-cute-buddha-thangka-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Cute Buddha Style — Manjushri Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/enamel-cute-buddha-thangka-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Cute-style Medicine Buddha",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/enamel-cute-buddha-thangka-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Cute Buddha Style — Zhaki Lhamo",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/enamel-cute-buddha-thangka-pendant/variant-8.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "color-painted-brass-tsatsa-pendant",
+    "name": "Color-painted Tsatsa Brass Thangka Pendant",
+    "shortDescription": "Color-painted tsatsa Thangka pendant in Tibetan-style brass mounting for wealth, protection, and peace.",
+    "description": "Authentic color-painted tsatsa thangka pendant with brass setting. Each piece is hand-painted by master craftsmen. Size: 4.1cm × 2.6cm × 0.92cm.",
+    "price": 79,
+    "category": "Necklace Pendant",
+    "deity": "Multiple Deities",
+    "size": "4.1cm × 2.6cm × 0.92cm",
+    "material": "Color-painted tsatsa thangka; brass",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/color-painted-brass-tsatsa-pendant/main.jpg",
+    "images": [
+      "/products/color-painted-brass-tsatsa-pendant/main.jpg",
+      "/products/color-painted-brass-tsatsa-pendant/detail-1.jpg",
+      "/products/color-painted-brass-tsatsa-pendant/detail-2.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "brass",
+      "tsatsa",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Vidyaraja",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Vairocana",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Mahasthamaprapta Bodhisattva",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Black Jambhala",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Fox Spirit",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Yellow Jambhala",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Six-Armed Mahakala",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Green Tara",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Four-Armed Avalokitesvara",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Manjushri Bodhisattva",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Akshagarbha",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-13.jpg"
+      },
+      {
+        "id": "variant-14",
+        "name": "Zaki Lhamo",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/color-painted-brass-tsatsa-pendant/variant-14.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "relief-tsatsa-thangka-pendant",
+    "name": "Hand-painted Relief Tsa-tsa Thangka Pendant",
+    "shortDescription": "Hand-painted relief tsa-tsa Thangka pendants featuring Manjushri, Zhaji Lhamo, Eight Great deities, Green Tara, and more.",
+    "description": "Authentic hand-painted relief tsatsa thangka pendant. Each piece is hand-painted one by one by master craftsmen using mineral pigments. Size: 5.45cm × 3.8cm × 0.9cm.",
+    "price": 129,
+    "category": "Necklace Pendant",
+    "deity": "Multiple Deities",
+    "size": "5.45cm × 3.8cm × 0.9cm",
+    "material": "Hand-painted relief tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/relief-tsatsa-thangka-pendant/main.jpg",
+    "images": [
+      "/products/relief-tsatsa-thangka-pendant/main.jpg",
+      "/products/relief-tsatsa-thangka-pendant/detail-1.jpg",
+      "/products/relief-tsatsa-thangka-pendant/detail-2.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "relief",
+      "tsatsa",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "White Jambhala",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Acala Natha",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Vairocana",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Mahasthamaprapta Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Yellow Jambhala",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Green Tara",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Four-Armed Avalokitesvara",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Manjushri Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Akshayagarbha Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Zakiram",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/relief-tsatsa-thangka-pendant/variant-12.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "ethnic-large-painted-thangka-pendant",
+    "name": "Tibetan-style Ethnic Painted Thangka Pendant",
+    "shortDescription": "Large Tibetan-style ethnic painted Thangka necklace pendant with multiple deity options.",
+    "description": "Authentic hand-painted ethnic-style tsatsa thangka pendant. Each piece is hand-painted by master craftsmen using mineral pigments. Size: 7.65cm × 4.67cm × 1cm.",
+    "price": 129,
+    "category": "Necklace Pendant",
+    "deity": "Multiple Deities",
+    "size": "7.65cm × 4.67cm × 1cm",
+    "material": "Hand-painted tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/ethnic-large-painted-thangka-pendant/main.jpg",
+    "images": [
+      "/products/ethnic-large-painted-thangka-pendant/main.jpg",
+      "/products/ethnic-large-painted-thangka-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "ethnic",
+      "hand-painted",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Vidyaraja",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Vairocana",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Mahasthamaprapta Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Yellow Jambhala",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Green Tara",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Thousand-Hand Guanyin",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Past and Present Lives",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Full-body Portrait of Dakini Zaki Ram",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Four-Armed Avalokitesvara",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Manjushri Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Akshayabodhi Bodhisattva",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-13.jpg"
+      },
+      {
+        "id": "variant-14",
+        "name": "Medicine Buddha",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-14.jpg"
+      },
+      {
+        "id": "variant-15",
+        "name": "Zaki Lhamo",
+        "price": 129,
+        "inStock": true,
+        "image": "/products/ethnic-large-painted-thangka-pendant/variant-15.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "round-leather-shell-zhaxi-pendant",
+    "name": "Wipe-clean Leather-shell Zhaxi Lhamo Thangka Pendant",
+    "shortDescription": "Round wipe-clean hand-crafted leather-shell Thangka pendant featuring Zhaxi Lhamo related styles.",
+    "description": "Authentic wipe-clean leather-shell tsatsa thangka pendant. Size: 5.3cm × 4.6cm × 1.6cm.",
+    "price": 99,
+    "category": "Pendant",
+    "deity": "Zhaxi Lhamo",
+    "size": "5.3cm × 4.6cm × 1.6cm",
+    "material": "Hand-crafted leather-shell tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/round-leather-shell-zhaxi-pendant/main.jpg",
+    "images": [
+      "/products/round-leather-shell-zhaxi-pendant/main.jpg",
+      "/products/round-leather-shell-zhaxi-pendant/detail-1.jpg",
+      "/products/round-leather-shell-zhaxi-pendant/detail-2.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "leather shell",
+      "zhaxi lhamo",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Yellow Jambhala",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/round-leather-shell-zhaxi-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Green Tara",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/round-leather-shell-zhaxi-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Manjushri Bodhisattva",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/round-leather-shell-zhaxi-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Zakiram",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/round-leather-shell-zhaxi-pendant/variant-4.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "turquoise-thangka-amulet-box-pendant",
+    "name": "Turquoise Thangka-painting Amulet Box Pendant",
+    "shortDescription": "Turquoise Thangka-painting amulet box pendant with Eight Personal Guardian Deities, Yellow Jambhala, Green Tara, and more.",
+    "description": "Authentic turquoise-style thangka painting amulet / tsha-tsha box pendant. Size: 4.3cm × 2.3cm × 0.84cm.",
+    "price": 199,
+    "category": "Pendant",
+    "deity": "Multiple Deities",
+    "size": "4.3cm × 2.3cm × 0.84cm",
+    "material": "Turquoise amulet box; hand-painted thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/turquoise-thangka-amulet-box-pendant/main.jpg",
+    "images": [
+      "/products/turquoise-thangka-amulet-box-pendant/main.jpg",
+      "/products/turquoise-thangka-amulet-box-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "turquoise",
+      "amulet box",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Vidyaraja",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Vairocana",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Mahasthamaprapta Bodhisattva",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Ksitigarbha",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Fox Spirit",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Huang Cai",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Six-Armed Mahakala",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Green Tara",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Past and Present Lives",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Four-Armed Avalokitesvara",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Manjushri Bodhisattva",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-13.jpg"
+      },
+      {
+        "id": "variant-14",
+        "name": "Akshayabodhi Bodhisattva",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-14.jpg"
+      },
+      {
+        "id": "variant-15",
+        "name": "Medicine Buddha",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-15.jpg"
+      },
+      {
+        "id": "variant-16",
+        "name": "Zaki Lhamo",
+        "price": 199,
+        "inStock": true,
+        "image": "/products/turquoise-thangka-amulet-box-pendant/variant-16.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "face-carved-thangka-pendant",
+    "name": "Hand-painted Face-carved Thangka Pendant",
+    "shortDescription": "Hand-painted Thangka pendant series with face-carved options — Zhajilamu Eight Patron Deities and more.",
+    "description": "Authentic hand-painted face-carved tsatsa thangka pendant. Size: 4.89cm × 2.29cm × 1.69cm.",
+    "price": 179,
+    "category": "Necklace Pendant",
+    "deity": "Multiple Deities",
+    "size": "4.89cm × 2.29cm × 1.69cm",
+    "material": "Hand-painted face-carved tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/face-carved-thangka-pendant/main.jpg",
+    "images": [
+      "/products/face-carved-thangka-pendant/main.jpg",
+      "/products/face-carved-thangka-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "face-carved",
+      "hand-painted",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Vidyaraja B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Fudo Myoo Face-Carved Version B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Vairocana B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Vairocana Buddha Face-Carved Version C",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Mahasthamaprapta Bodhisattva B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Black Wealth God B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Black Jambhala Face-Carved Version C",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Fox Spirit Face-Reveal Version B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Yellow God of Wealth D",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Yellow Jambhala Face-Carved Version C",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Yellow Jambhala Face-Carved Version D",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Six-Armed Mahakala B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-13.jpg"
+      },
+      {
+        "id": "variant-14",
+        "name": "Green Tara B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-14.jpg"
+      },
+      {
+        "id": "variant-15",
+        "name": "Samantabhadra Bodhisattva B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-15.jpg"
+      },
+      {
+        "id": "variant-16",
+        "name": "Four-Armed Avalokitesvara B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-16.jpg"
+      },
+      {
+        "id": "variant-17",
+        "name": "Four-Armed Avalokitesvara Face-Carved Version C",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-17.jpg"
+      },
+      {
+        "id": "variant-18",
+        "name": "Manjushri Bodhisattva B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-18.jpg"
+      },
+      {
+        "id": "variant-19",
+        "name": "Manjushri Bodhisattva Face-Carved Version C",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-19.jpg"
+      },
+      {
+        "id": "variant-20",
+        "name": "Akshayagarbha Bodhisattva B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-20.jpg"
+      },
+      {
+        "id": "variant-21",
+        "name": "Medicine Buddha B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-21.jpg"
+      },
+      {
+        "id": "variant-22",
+        "name": "Zaki Lhamo Facial-Carved Version B",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-22.jpg"
+      },
+      {
+        "id": "variant-23",
+        "name": "Zashi Lhamo Facial-Carved Version C",
+        "price": 179,
+        "inStock": true,
+        "image": "/products/face-carved-thangka-pendant/variant-23.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "painted-tsatsa-ethnic-pendant",
+    "name": "Painted Tsa-tsa Ethnic Thangka Pendant",
+    "shortDescription": "Painted tsa-tsa Thangka pendants including Samantabhadra, Nine-Tailed Fox, Green Tara, Yellow Jambhala, and patinated ethnic styles.",
+    "description": "Authentic painted tsatsa thangka pendant in ethnic style. Size: 5.2cm × 4.45cm × 1.17cm.",
+    "price": 49,
+    "category": "Necklace Pendant",
+    "deity": "Multiple Deities",
+    "size": "5.2cm × 4.45cm × 1.17cm",
+    "material": "Painted tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/painted-tsatsa-ethnic-pendant/main.jpg",
+    "images": [
+      "/products/painted-tsatsa-ethnic-pendant/main.jpg",
+      "/products/painted-tsatsa-ethnic-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "tsatsa",
+      "ethnic",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Natha",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Vairocana",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Mahasthamaprapta Bodhisattva",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Ksitigarbha",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Guan Gong",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Black Wealth God",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Black Grandma",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Fox Spirit",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Yellow Jambhala",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Six-Armed Mahakala",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Green Tara",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Marici",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-13.jpg"
+      },
+      {
+        "id": "variant-14",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-14.jpg"
+      },
+      {
+        "id": "variant-15",
+        "name": "Past and Present Lives",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-15.jpg"
+      },
+      {
+        "id": "variant-16",
+        "name": "Four-Armed Avalokitesvara",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-16.jpg"
+      },
+      {
+        "id": "variant-17",
+        "name": "Manjushri Bodhisattva",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-17.jpg"
+      },
+      {
+        "id": "variant-18",
+        "name": "Five-way God of Wealth",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-18.jpg"
+      },
+      {
+        "id": "variant-19",
+        "name": "Akshagarbha",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-19.jpg"
+      },
+      {
+        "id": "variant-20",
+        "name": "Medicine Buddha",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-20.jpg"
+      },
+      {
+        "id": "variant-21",
+        "name": "Zakiram",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-21.jpg"
+      },
+      {
+        "id": "variant-22",
+        "name": "Zhao Gongming",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-22.jpg"
+      },
+      {
+        "id": "variant-23",
+        "name": "Kurukulla",
+        "price": 49,
+        "inStock": true,
+        "image": "/products/painted-tsatsa-ethnic-pendant/variant-23.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "double-sided-wealth-deity-pendant",
+    "name": "Hand-painted Double-sided God of Wealth Thangka Pendant",
+    "shortDescription": "Double-sided hand-painted God of Wealth Thangka pendant with paired deity combinations.",
+    "description": "Authentic double-sided hand-painted tsatsa thangka pendant. Size: 5.7cm × 4.7cm × 0.89cm.",
+    "price": 79,
+    "category": "Pendant",
+    "deity": "Wealth Deities",
+    "size": "5.7cm × 4.7cm × 0.89cm",
+    "material": "Hand-painted double-sided tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/double-sided-wealth-deity-pendant/main.jpg",
+    "images": [
+      "/products/double-sided-wealth-deity-pendant/main.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "double-sided",
+      "wealth",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha + Yellow God of Wealth",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/double-sided-wealth-deity-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Huang Cai + Huang Cai",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/double-sided-wealth-deity-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Manjushri + Yellow Jambhala",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/double-sided-wealth-deity-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Zakiram + Yellow Jambhala",
+        "price": 79,
+        "inStock": true,
+        "image": "/products/double-sided-wealth-deity-pendant/variant-4.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "gate-shaped-patron-buddha-pendant",
+    "name": "Gate-shaped Hand-painted Patron Buddha Thangka Pendant",
+    "shortDescription": "Door/gate-shaped hand-painted Thangka pendant featuring patron Buddhas and related designs.",
+    "description": "Authentic gate-shaped hand-painted tsatsa thangka pendant. Size: 4.65cm × 3.8cm × 1.75cm.",
+    "price": 149,
+    "category": "Necklace Pendant",
+    "deity": "Patron Buddhas",
+    "size": "4.65cm × 3.8cm × 1.75cm",
+    "material": "Hand-painted tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/gate-shaped-patron-buddha-pendant/main.jpg",
+    "images": [
+      "/products/gate-shaped-patron-buddha-pendant/main.jpg",
+      "/products/gate-shaped-patron-buddha-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "gate-shaped",
+      "patron buddha",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Door-shaped — Patron Buddha Amitabha",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Door-Style — Patron Deity Acala",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Door-shaped — Patron Buddha Vairocana",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Door-shaped — Patron Buddha Mahasthamaprapta Bodhisattva",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Door-shaped — Patron Bodhisattva Samantabhadra",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Door-style — Patron Deity Four-Armed Avalokitesvara",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Door-style — Manjushri Bodhisattva, the Patron Buddha",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Door-shaped — Patron Buddha Akasagarbha Bodhisattva",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Gate-Type — Fox Spirit",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Door-Style — Nine-Tailed Fox Immortal",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Door-Style — Past and Present",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Door-style — Medicine Buddha (Without Heart Mantra)",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Door-Style — Zakiram",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/gate-shaped-patron-buddha-pendant/variant-13.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "ethnic-style-thangka-pendant",
+    "name": "Painted Ethnic-Style Thangka Pendant",
+    "shortDescription": "Painted ethnic-style Thangka pendants for men and women, with multiple deity options.",
+    "description": "Authentic painted ethnic-style tsatsa thangka pendant. Size: 5.6cm × 3.8cm × 1cm.",
+    "price": 99,
+    "category": "Pendant",
+    "deity": "Multiple Deities",
+    "size": "5.6cm × 3.8cm × 1cm",
+    "material": "Painted tsatsa thangka",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/ethnic-style-thangka-pendant/main.jpg",
+    "images": [
+      "/products/ethnic-style-thangka-pendant/main.jpg",
+      "/products/ethnic-style-thangka-pendant/detail-1.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "ethnic",
+      "hand-painted",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Amitabha Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Acala Natha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Vairocana",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Mahasthamaprapta Bodhisattva",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Black Jambhala",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-5.jpg"
+      },
+      {
+        "id": "variant-6",
+        "name": "Fox Spirit",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-6.jpg"
+      },
+      {
+        "id": "variant-7",
+        "name": "Yellow Jambhala",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-7.jpg"
+      },
+      {
+        "id": "variant-8",
+        "name": "Green Tara",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-8.jpg"
+      },
+      {
+        "id": "variant-9",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-9.jpg"
+      },
+      {
+        "id": "variant-10",
+        "name": "Thousand-Hand Guanyin",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-10.jpg"
+      },
+      {
+        "id": "variant-11",
+        "name": "Past and Present Lives",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-11.jpg"
+      },
+      {
+        "id": "variant-12",
+        "name": "Four-Armed Avalokitesvara",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-12.jpg"
+      },
+      {
+        "id": "variant-13",
+        "name": "Manjushri Bodhisattva",
+        "price": 149,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-13.jpg"
+      },
+      {
+        "id": "variant-14",
+        "name": "Akshayagarbha Bodhisattva",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-14.jpg"
+      },
+      {
+        "id": "variant-15",
+        "name": "Medicine Buddha",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-15.jpg"
+      },
+      {
+        "id": "variant-16",
+        "name": "Zakiram",
+        "price": 99,
+        "inStock": true,
+        "image": "/products/ethnic-style-thangka-pendant/variant-16.jpg"
+      }
+    ]
+  },
+  {
+    "slug": "gau-box-3d-thangka-pendant",
+    "name": "Hand-painted 3D Thangka Gawu / Tsa-tsa Box Pendant",
+    "shortDescription": "Hand-painted 3D Thangka gawu box / tsa-tsa box pendant necklace featuring Zhaxi Lhamo related styles.",
+    "description": "Authentic hand-painted 3D thangka gawu / tsa-tsa box pendant. Size: 3cm × 2.4cm × 0.95cm.",
+    "price": 170,
+    "category": "Pendant",
+    "deity": "Multiple Deities",
+    "size": "3cm × 2.4cm × 0.95cm",
+    "material": "Hand-painted 3D tsatsa / gawu box",
+    "origin": "Tibet / Nepal workshop",
+    "inStock": true,
+    "featured": true,
+    "image": "/products/gau-box-3d-thangka-pendant/main.jpg",
+    "images": [
+      "/products/gau-box-3d-thangka-pendant/main.jpg",
+      "/products/gau-box-3d-thangka-pendant/detail-1.jpg",
+      "/products/gau-box-3d-thangka-pendant/detail-2.jpg"
+    ],
+    "tags": [
+      "pendant",
+      "gau box",
+      "3d",
+      "thangka"
+    ],
+    "variants": [
+      {
+        "id": "variant-1",
+        "name": "Yellow Jambhala",
+        "price": 170,
+        "inStock": true,
+        "image": "/products/gau-box-3d-thangka-pendant/variant-1.jpg"
+      },
+      {
+        "id": "variant-2",
+        "name": "Nine-tailed Fox",
+        "price": 170,
+        "inStock": true,
+        "image": "/products/gau-box-3d-thangka-pendant/variant-2.jpg"
+      },
+      {
+        "id": "variant-3",
+        "name": "Green Tara",
+        "price": 170,
+        "inStock": true,
+        "image": "/products/gau-box-3d-thangka-pendant/variant-3.jpg"
+      },
+      {
+        "id": "variant-4",
+        "name": "Samantabhadra Bodhisattva",
+        "price": 170,
+        "inStock": true,
+        "image": "/products/gau-box-3d-thangka-pendant/variant-4.jpg"
+      },
+      {
+        "id": "variant-5",
+        "name": "Zakiram",
+        "price": 170,
+        "inStock": true,
+        "image": "/products/gau-box-3d-thangka-pendant/variant-5.jpg"
+      }
+    ]
+  },
+  {
     "slug": "paypal-test-1-dollar",
     "name": "PayPal Test Item ()",
     "shortDescription": "Temporary  test product for verifying Live PayPal checkout. Not a real Thangka — delete after testing.",
